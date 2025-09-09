@@ -3,109 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sazmatic — Under Construction</title>
-  <meta name="description" content="Sazmatic.com is under construction. We're crafting something new—check back soon!" />
-  <meta name="theme-color" content="#2563eb" />
-
-  <style>
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-
-    body {
-      background: #f9fafb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      color: #1f2937;
-    }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      padding: 40px;
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 60px; height: 60px;
-      margin: 0 auto 20px;
-      border-radius: 12px;
-      background: #2563eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 28px;
-      font-weight: 700;
-    }
-
-    h1 { font-size: 28px; margin: 0 0 10px; color: #111827; }
-    p { margin: 0 0 20px; font-size: 16px; color: #4b5563; }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: #eff6ff;
-      color: #1d4ed8;
-      font-weight: 600;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-
-    .btn {
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 14px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .btn.primary {
-      background: #2563eb;
-      color: #fff;
-    }
-    .btn.primary:hover { background: #1e40af; }
-
-    .btn.secondary {
-      background: #f3f4f6;
-      color: #374151;
-    }
-    .btn.secondary:hover { background: #e5e7eb; }
-
-    footer {
-      margin-top: 24px;
-      font-size: 13px;
-      color: #6b7280;
-    }
-    footer a { color: #2563eb; text-decoration: none; margin: 0 6px; }
-    footer a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <title>Home - Sazmatic Trading Inc.</title>
 </head>
 <body>
-  <main class="card">
-    <div class="logo">S</div>
-    <h1>Sazmatic.com</h1>
-    <p>We’re working hard to bring you something new. Please check back soon!</p>
-    <div class="badge">🚧 Site under construction</div>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="partners.html">Partners</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <div class="btns">
-      <a class="btn primary" href="mailto:hello@sazmatic.com">Notify Me</a>
-    </div>
+<!-- Hero Banner -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Sazmatic Trading Inc.</h1>
+    <p>Innovating hospitality with advanced technology solutions across Canada.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+  </div>
+</section>
 
-    <footer>
-      <p>© <span id="year"></span> Sazmatic. All rights reserved. | <a href="mailto:hello@sazmatic.com">Contact</a></p>
-    </footer>
-  </main>
+<main>
+<h2>About Us</h2>
+<p>SAZMATIC TRADING INC. operates as a provider of hospitality-focused technology products. Based in Kitchener, Ontario, we primarily target Canadian hotels, resorts, commercial offices, and holiday homes, with plans to expand across Ontario, Alberta, and all of Canada.</p>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<h2>Mission Statement</h2>
+<p>We are dedicated to delivering advanced, integrated technology solutions to the Hospitality Industry, enhancing guest experience, operational efficiency, and energy management. By partnering with leading global manufacturers and providing exceptional customer support, we empower hotels and accommodation operators with secure, reliable, and innovative systems.</p>
+
+<h2>Products & Services</h2>
+<ul>
+  <li>Electronic Locks</li>
+  <li>Electronic Digital Safes</li>
+  <li>Guestroom Minibars</li>
+  <li>Energy Management Solutions</li>
+  <li>Technical Support Services</li>
+</ul>
+
+<p>
+  <a href="partners.html" class="btn">Meet Our Partners</a>
+  <a href="contact.html" class="btn">Get In Touch</a>
+</p>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Sazmatic Trading Inc. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
